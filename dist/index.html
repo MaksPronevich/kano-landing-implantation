@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KANO</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- Yandex map -->
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <!-- intlTelInput -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Styles-->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="https://kano.by/" target="_blank" class="header-logo">
+            <img src="img/logo.svg" alt="KANO" />
+          </a>
+          <nav class="header-nav">
+            <ul class="header-nav__list" id="top-menu">
+              <li class="header-nav__item">
+                <a href="#why-kano" class="header-nav__link" data-name="why-kano">Почему Kano</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#stages" class="header-nav__link" data-name="stages">Этапы</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#types" class="header-nav__link" data-name="types">Виды имплантации</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#stories" class="header-nav__link" data-name="stories">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-phone">
+            <a href="tel:375296433401" class="header-phone__link">+375 29 643-34-01</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#consultation" class="header-phone__btn">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="first-screen">
+        <div class="container">
+          <div class="first-screen__wrap">
+            <h1 class="first-screen__title">
+              Сеть клиник дентальной имплантации
+              <span> №1<br />в Беларуси</span>
+            </h1>
+            <p class="first-screen__caption">
+              Восстановим любое количество зубов<br />
+              с гарантией
+            </p>
+            <button class="btn-pink btn-pink--first-screen" data-bs-toggle="modal" data-bs-target="#consultation">Бесплатная консультация</button>
+            <div class="first-screen-awards">
+              <div class="first-screen-awards__item">
+                <img src="img/first-screen/award1.png" class="first-screen-awards__img" width="37" height="34" alt="Стандарт ISO 9001:2015" />
+                <img src="img/first-screen/award1-m.png" class="first-screen-awards__img_mobile" width="23" height="20" alt="Стандарт ISO 9001:2015" />
+                <p class="first-screen-awards__text">Стандарт<br />ISO 9001:2015</p>
+              </div>
+              <div class="first-screen-awards__item">
+                <img src="img/first-screen/award2.png" class="first-screen-awards__img" width="37" height="37" alt="Премия №1" />
+                <img src="img/first-screen/award2-m.png" class="first-screen-awards__img_mobile" width="23" height="23" alt="Премия №1" />
+                <p class="first-screen-awards__text">
+                  Премия <br />
+                  №1
+                </p>
+              </div>
+            </div>
+            <img src="img/first-screen/bg-img.png" class="first-screen__img" alt="Изображение" />
+          </div>
+        </div>
+      </section>
+      <section class="why-kano section-scroll" id="why-kano">
+        <div class="container">
+          <h2 class="heading">Почему выбирают KANO?</h2>
+
+          <div class="why-kano__wrap">
+            <div class="why-kano__photos">
+              <img src="img/why-kano/1.png" class="why-kano__photo" width="600" height="511" alt="Наши специалисты" />
+              <img src="img/why-kano/2.png" class="why-kano__photo" width="600" height="511" alt="Наши специалисты" />
+              <img src="img/why-kano/1-m.png" class="why-kano__photo_mobile" alt="Наши специалисты" />
+              <img src="img/why-kano/2-m.png" class="why-kano__photo_mobile" alt="Наши специалисты" />
+            </div>
+            <ul class="why-kano__list">
+              <li class="why-kano__item">
+                <img src="img/why-kano/icon1.svg" class="why-kano__icon" alt="Быстрое лечение" />
+                <h3 class="why-kano__title">
+                  Быстрое<br />
+                  лечение
+                </h3>
+                <p class="why-kano__text">Полное восстановление челюсти за 5 дней</p>
+              </li>
+              <li class="why-kano__item">
+                <img src="img/why-kano/icon2.svg" class="why-kano__icon" alt="Честные цены" />
+                <h3 class="why-kano__title">
+                  Честные<br />
+                  цены
+                </h3>
+                <p class="why-kano__text">Стоимость будет зависеть только от тех услуг, которые вам действительно нужны</p>
+              </li>
+              <li class="why-kano__item">
+                <img src="img/why-kano/icon3.svg" class="why-kano__icon" alt="Расширенная гарантия" />
+                <h3 class="why-kano__title">
+                  Расширенная<br />
+                  гарантия
+                </h3>
+                <p class="why-kano__text">Пожизненная гарантия на имплантат от производителя. Гарантия на приживляемость - 5 лет</p>
+              </li>
+              <li class="why-kano__item">
+                <img src="img/why-kano/icon4.svg" class="why-kano__icon" alt="Ведущие специалисты страны" />
+                <h3 class="why-kano__title">
+                  Ведущие<br />
+                  специалисты<br />
+                  страны
+                </h3>
+                <p class="why-kano__text">Только 1 из 10 кандидатов получает работу в KANO. Наши доктора установили более 40 000 имплантатов</p>
+              </li>
+              <li class="why-kano__item">
+                <img src="img/why-kano/icon5.svg" class="why-kano__icon" alt="Любой уровень сложности" />
+                <h3 class="why-kano__title">
+                  Любой уровень<br />
+                  сложности
+                </h3>
+                <p class="why-kano__text">
+                  Наши доктора на протяжении всей карьеры проходят курсы у ведущих специалистов мира и осваивают сложнейшие медотики
+                </p>
+              </li>
+              <li class="why-kano__item">
+                <img src="img/why-kano/icon6.svg" class="why-kano__icon" alt="Приживаемость - 99,2%" />
+                <h3 class="why-kano__title">
+                  Приживаемость -<br />
+                  99,2%
+                </h3>
+                <p class="why-kano__text">Именно такого результата добилась наша клиника за последние 5 лет</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="stages section-scroll" id="stages">
+        <div class="container">
+          <div class="stages__wrap">
+            <h2 class="heading">Этапы имплантации</h2>
+            <ul class="stages-list">
+              <li class="stages-list__item">
+                <p class="stages-list__number">1</p>
+                <p class="stages-list__title">
+                  Консультация<br />
+                  у врача- имплантолога/<br />ортопеда
+                </p>
+              </li>
+              <li class="stages-list__item">
+                <p class="stages-list__number">2</p>
+                <p class="stages-list__title">Установка формирователя десны</p>
+              </li>
+              <li class="stages-list__item">
+                <p class="stages-list__number">3</p>
+                <p class="stages-list__title">Установка Имплантата</p>
+              </li>
+              <li class="stages-list__item">
+                <p class="stages-list__number">4</p>
+                <p class="stages-list__title">Подбор коронки — несъемного протеза зуба с врачом-ортопедом</p>
+              </li>
+              <li class="stages-list__item">
+                <p class="stages-list__number">5</p>
+                <p class="stages-list__title">Установка коронки на имплантат</p>
+              </li>
+              <li class="stages-list__item">
+                <p class="stages-list__number">6</p>
+                <p class="stages-list__title">Полное сопровождение после установки от kano</p>
+              </li>
+            </ul>
+            <ul class="stages-list_mobile">
+              <li class="stages-list__item_mobile">
+                <p class="stages-list__number_mobile">1</p>
+                <p class="stages-list__title_mobile">Консультация у врача-<br />имплантолога/ортопеда</p>
+              </li>
+              <li class="stages-list__item_mobile">
+                <p class="stages-list__number_mobile">2</p>
+                <p class="stages-list__title_mobile">Установка формирователя десны</p>
+              </li>
+              <li class="stages-list__item_mobile">
+                <p class="stages-list__number_mobile">3</p>
+                <p class="stages-list__title_mobile">Установка Имплантата</p>
+              </li>
+              <li class="stages-list__item_mobile">
+                <p class="stages-list__number_mobile">4</p>
+                <p class="stages-list__title_mobile">
+                  Подбор коронки—несъемного<br />
+                  протеза зуба с врачом-<br />ортопедом
+                </p>
+              </li>
+              <li class="stages-list__item_mobile">
+                <p class="stages-list__number_mobile">5</p>
+                <p class="stages-list__title_mobile">
+                  Установка коронки на<br />
+                  имплантат
+                </p>
+              </li>
+              <li class="stages-list__item_mobile">
+                <p class="stages-list__number_mobile">6</p>
+                <p class="stages-list__title_mobile">
+                  Полное сопровождение после<br />
+                  установки от kano
+                </p>
+              </li>
+            </ul>
+            <button class="btn-pink btn-pink--stages" data-bs-toggle="modal" data-bs-target="#consultation">Записаться на лечение</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="types section-scroll" id="types">
+        <div class="container">
+          <h2 class="heading">Виды имплантации</h2>
+          <nav class="types-nav">
+            <ul class="types-nav__list">
+              <li class="types-nav__item">
+                <button class="types-nav__btn active">Классическая</button>
+              </li>
+              <li class="types-nav__item">
+                <button class="types-nav__btn">Имплантация All-on-4</button>
+              </li>
+              <li class="types-nav__item">
+                <button class="types-nav__btn">Одномоментная</button>
+              </li>
+              <li class="types-nav__item">
+                <button class="types-nav__btn">Скуловая</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="types-content">
+            <div class="types-content__item active">
+              <div class="implants">
+                <img src="img/implants/1.png" class="implants__img" alt="Классическая" />
+                <div class="implants__description">
+                  <h2 class="implants__title">Классическая имплантация</h2>
+                  <p class="implants__caption">
+                    Самая распространенная методика<br />
+                    Подходит практически для любых клинических ситуаций.
+                  </p>
+                  <div class="implants__divider"></div>
+                  <ul class="implants__list">
+                    <li class="implants__item">
+                      <img src="img/implants/icons/1-1.svg" alt="Star" />
+                      <p class="implants__text">Материалы и имплантаты наивысшего качества. Все, что мы используем прошло тестирование</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/1-2.svg" alt="Good" />
+                      <div>
+                        <p class="implants__text">Работаем только с ведущими производителями</p>
+                        <ul class="implants__sub-list">
+                          <li class="implants__sub-item">
+                            <img src="img/implants/icons/de.png" alt="Германия" />
+                            <p class="implants__sub-text">Германия</p>
+                          </li>
+                          <li class="implants__sub-item">
+                            <img src="img/implants/icons/se.png" alt="Швеция" />
+                            <p class="implants__sub-text">Швеция</p>
+                          </li>
+                          <li class="implants__sub-item">
+                            <img src="img/implants/icons/kr.png" alt="Южная Корея" />
+                            <p class="implants__sub-text">Южная Корея</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="types-content__item">
+              <div class="implants">
+                <img src="img/implants/2.png" class="implants__img" alt="Имплантация All-on-4" />
+                <div class="implants__description">
+                  <h2 class="implants__title">Комплексная имплантация "Все на 4/6"</h2>
+                  <ul class="implants__list implants__list--mod">
+                    <li class="implants__item">
+                      <img src="img/implants/icons/2-1.svg" alt="" />
+                      <p class="implants__text">Не требует пластики костной ткани</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/2-2.svg" alt="" />
+                      <p class="implants__text">Равноценная нагрузка на все импланты</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/2-3.svg" alt="" />
+                      <p class="implants__text">В 80% случаев без наращивания костной ткани</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/2-4.svg" alt="" />
+                      <p class="implants__text">Подходит в случае полной потери зубов</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/2-5.svg" alt="" />
+                      <p class="implants__text">Значительно дешевле, чем отдельные импланты</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/2-4.svg" alt="" />
+                      <p class="implants__text">Привыкание меньше, чем за неделю</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="types-content__item">
+              <div class="implants">
+                <img src="img/implants/3.png" class="implants__img" alt="Одномоментная имплантация" />
+                <div class="implants__description">
+                  <h2 class="implants__title">Одномоментная имплантация</h2>
+                  <p class="implants__caption">Установка имплантата и протезирование происходит за 1 этап</p>
+                  <div class="implants__divider"></div>
+                  <ul class="implants__list">
+                    <li class="implants__item">
+                      <img src="img/implants/icons/3-1.svg" alt="" />
+                      <p class="implants__text">Установка имплантата и коронки за 1 час</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/3-2.svg" alt="" />
+                      <p class="implants__text">Быстрое восстановление</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/3-3.svg" alt="" />
+                      <p class="implants__text">Минимум дискомфорта и болевых ощущений</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="types-content__item">
+              <div class="implants">
+                <img src="img/implants/4.png" class="implants__img" alt="Скуловая имплантация" />
+                <div class="implants__description">
+                  <h2 class="implants__title">Скуловая имплантация</h2>
+                  <p class="implants__caption">
+                    Сложнейшая методика имплантации по системе зигома <br /><br />
+                    Этот вид имплантации требует специального обучения специалистов
+                  </p>
+                  <div class="implants__divider"></div>
+                  <h3 class="implants__list-title">Применяется при:</h3>
+                  <ul class="implants__list">
+                    <li class="implants__item">
+                      <img src="img/implants/icons/4.svg" alt="" />
+                      <p class="implants__text">Тотальной атрофии костной ткани</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/4.svg" alt="" />
+                      <p class="implants__text">Невозможность проведения процедуры синус-лифтинг</p>
+                    </li>
+                    <li class="implants__item">
+                      <img src="img/implants/icons/4.svg" alt="" />
+                      <p class="implants__text">Невозможность вживления классических или компрессионных одноэтапных имплантатов</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="implants__wrap_mobile">
+            <div class="implants__item_mobile">
+              <div class="implants__img_mobile">
+                <img src="img/implants/1-m.png" alt="" />
+              </div>
+
+              <h2 class="implants__title_mobile">Классическая имплантация</h2>
+              <p class="implants__text_mobile">Самая распространенная методика</p>
+              <button class="btn-outline btn-mobile" data-bs-toggle="modal" data-bs-target="#implants1">Подробнее</button>
+            </div>
+            <div class="implants__item_mobile">
+              <div class="implants__img_mobile">
+                <img src="img/implants/2-m.png" alt="" />
+              </div>
+              <h2 class="implants__title_mobile">Имплантация All on 4/6</h2>
+              <p class="implants__text_mobile">Оптимальный метод восстановления всей челюсти</p>
+              <button class="btn-outline btn-mobile" data-bs-toggle="modal" data-bs-target="#implants2">Подробнее</button>
+            </div>
+            <div class="implants__item_mobile">
+              <div class="implants__img_mobile">
+                <img src="img/implants/3-m.png" alt="" />
+              </div>
+              <h2 class="implants__title_mobile">Одномоментная имплантация</h2>
+              <p class="implants__text_mobile">Установка импланта и протезирование происходит за 1 этап</p>
+              <button class="btn-outline btn-mobile" data-bs-toggle="modal" data-bs-target="#implants3">Подробнее</button>
+            </div>
+            <div class="implants__item_mobile">
+              <div class="implants__img_mobile">
+                <img src="img/implants/4-m.png" alt="" />
+              </div>
+              <h2 class="implants__title_mobile">Скуловая имплантация</h2>
+              <p class="implants__text_mobile">Сложнейшая методика имплантации по системе зигома</p>
+              <button class="btn-outline" data-bs-toggle="modal" data-bs-target="#implants4">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="answer">
+        <div class="container">
+          <div class="answer__wrap">
+            <div class="answer__img"></div>
+            <div class="answer__content">
+              <h2 class="heading heading--answer">Не знаете, какое лечение подходит вам?</h2>
+              <p class="answer__text">У вас отсутсвуют зубы или они в плохом состоянии?</p>
+              <p class="answer__text">
+                Мы занимаемся лечением абсолютно любых проблем, связанных с зубами Мы восстановим вам один зуб или всю челюсть или займемся реставрацией
+                зубов в плохом состоянии.
+              </p>
+              <p class="answer__text">Записывайтесь на бесплатную консультацию, и врач расскажет вам все возможные варианты лечения</p>
+              <button class="btn-pink btn-pink--answer" data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="materials">
+        <div class="container">
+          <h2 class="heading heading--materials">
+            Как начать разбираться в имплантации и понимать<br />
+            о чем говорит доктор
+          </h2>
+          <div class="materials-wrap">
+            <div class="materials__img-block">
+              <img src="img/materials/materials.png" class="materials__img" alt="" />
+            </div>
+            <div class="materials__content">
+              <h3 class="materials__title">Наши врачи в KANO подготовили для вас подборку, которая поможет вам:</h3>
+              <ul class="materials__list">
+                <li class="materials__item">
+                  <img src="img/materials/icon.svg" alt="" />
+                  <p>Разобраться во всех нюансах имплантации</p>
+                </li>
+                <li class="materials__item">
+                  <img src="img/materials/icon.svg" alt="" />
+                  <p>Узнать разницу между фирмами- производителями имплантов</p>
+                </li>
+                <li class="materials__item">
+                  <img src="img/materials/icon.svg" alt="" />
+                  <p>Получить ответы на самые частые вопросы</p>
+                </li>
+                <li class="materials__item">
+                  <img src="img/materials/icon.svg" alt="" />
+                  <p>Узнать какой вид имплантации подходит для вас</p>
+                </li>
+                <li class="materials__item">
+                  <img src="img/materials/icon.svg" alt="" />
+                  <p>Получить рекомендацию по уходу за имплантами</p>
+                </li>
+              </ul>
+              <form action="" class="form form--materials">
+                <input type="tel" name="phone" class="phone phone--materials" id="phone" />
+                <button class="btn-pink btn-pink--materials">Получить материалы</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blockquotes">
+        <div class="container">
+          <div class="blockquotes__content">
+            <div class="blockquotes__images-wrap">
+              <span class="blockquotes__images-item active">
+                <img src="img/blockquotes/1.png" alt="1" />
+              </span>
+              <span class="blockquotes__images-item">
+                <img src="img/blockquotes/2.png" alt="2" />
+              </span>
+              <span class="blockquotes__images-item">
+                <img src="img/blockquotes/3.png" alt="3" />
+              </span>
+              <span class="blockquotes__images-item">
+                <img src="img/blockquotes/4.png" alt="4" />
+              </span>
+              <span class="blockquotes__images-item">
+                <img src="img/blockquotes/5.png" alt="5" />
+              </span>
+              <span class="blockquotes__images-item">
+                <img src="img/blockquotes/6.png" alt="6" />
+              </span>
+              <span class="blockquotes__images-item">
+                <img src="img/blockquotes/7.png" alt="7" />
+              </span>
+              <span class="blockquotes__images-item">
+                <img src="img/blockquotes/8.png" alt="8" />
+              </span>
+            </div>
+            <div class="blockquotes__texts-wrap">
+              <div class="blockquotes__texts-item active">
+                <p class="blockquotes__name"><span>Валерия</span>, США</p>
+                <p class="blockquotes__quote">«Моя улыбка - это моя визитная карточка»</p>
+              </div>
+              <div class="blockquotes__texts-item">
+                <p class="blockquotes__name"><span>Елена</span>, Беларусь</p>
+                <p class="blockquotes__quote">«Я прилетела в клинику KANO из Нью-Йорка»</p>
+              </div>
+              <div class="blockquotes__texts-item">
+                <p class="blockquotes__name"><span>Едена</span>, Беларусь</p>
+                <p class="blockquotes__quote">«Абсолютно довольна методами лечения и сервисом стоматологии»</p>
+              </div>
+              <div class="blockquotes__texts-item">
+                <p class="blockquotes__name"><span>Илья</span>, Беларусь</p>
+                <p class="blockquotes__quote">«KANO - это, в первую очередь, качество»</p>
+              </div>
+              <div class="blockquotes__texts-item">
+                <p class="blockquotes__name"><span>Ирина</span>, Россия</p>
+                <p class="blockquotes__quote">«Сервис у вас очень хорош»</p>
+              </div>
+              <div class="blockquotes__texts-item">
+                <p class="blockquotes__name"><span>Марина</span>, Эстония</p>
+                <p class="blockquotes__quote">«Онлайн-консультация - это очень удобно!»</p>
+              </div>
+              <div class="blockquotes__texts-item">
+                <p class="blockquotes__name"><span>Алексей</span>, Россия</p>
+                <p class="blockquotes__quote">«Здесь отношение цена-качество оптимальное»</p>
+              </div>
+              <div class="blockquotes__texts-item">
+                <p class="blockquotes__name"><span>Пётр</span>, США</p>
+                <p class="blockquotes__quote">«Вас буду рекомендовать всем своим знакомым»</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="heading center">Материалы наивысшего качества</h2>
+          <div class="partners__texts-wrap">
+            <p>Работаем только с ведущими производителями имплантов и материлов</p>
+            <ul class="partners__list">
+              <li class="partners__item">
+                <img src="img/partners/de.png" alt="Германия" />
+                <span>Германия</span>
+              </li>
+              <li class="partners__item">
+                <img src="img/partners/se.png" alt="Швеция" />
+                <span>Швеция</span>
+              </li>
+              <li class="partners__item">
+                <img src="img/partners/kr.png" alt="Южная Корея" />
+                <span>Южная Корея</span>
+              </li>
+            </ul>
+            <p>Все, что мы принимаем при вашем лечении прошло международное тестирование.</p>
+          </div>
+          <h3 class="partners__title">Производители с кем мы сотрудничаем:</h3>
+          <ul class="partners__list1">
+            <li class="partners__item1">
+              <img src="img/partners/megagen.png" alt="Megagen" />
+              <span>Оптимальное сочетание <br />цена/качество</span>
+            </li>
+            <li class="partners__item1">
+              <img src="img/partners/shtrauman.png" alt="Shtrauman" />
+              <span>Премиум</span>
+            </li>
+            <li class="partners__item1">
+              <img src="img/partners/nobel.png" alt="Nobel Biocare" />
+              <span>
+                Используем в отдельных<br />
+                случаях
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="full-block full-block1">
+        <div class="container">
+          <h2 class="heading heading--full-block">
+            Что вас ждет на <span>бесплатной</span><br />
+            консультации:
+          </h2>
+          <ul class="full-block__list">
+            <li class="full-block__item">
+              <img src="img/full-block/icon1.svg" alt="" />
+              <span>Узнаете сроки, стоимость и вид <br />лечения</span>
+            </li>
+            <li class="full-block__item">
+              <img src="img/full-block/icon2.svg" alt="" />
+              <span>
+                Выберете имплантаты, которые<br />
+                подходят вам лучше всего
+              </span>
+            </li>
+          </ul>
+          <button class="btn-pink btn-pink--full-block" data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</button>
+        </div>
+      </section>
+
+      <section class="problems">
+        <div class="container">
+          <div class="problems__wrap">
+            <div class="problems__content">
+              <h2 class="heading heading--problems">KANO решает проблемы любой степени сложности, как простые случаи, так и сложные</h2>
+              <h3 class="problems__title">Проведение таких операций требуют ежегодного повышения квалификации за границей.</h3>
+              <p class="problems__text">Квалификация наших врачей позволяет проводить сложнейшие операции.</p>
+            </div>
+            <img src="img/problems/problems__img.png" class="problems__img" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="answer">
+        <div class="container">
+          <div class="answer__wrap">
+            <div class="answer__img2"></div>
+            <div class="answer__content">
+              <h2 class="heading heading--answer">Как получить идеальную улыбку?</h2>
+              <p class="answer__text">У нас в клинике есть своя зуботехническая лаборатория.</p>
+              <p class="answer__text">
+                Это позволяет нам производить индивидуальные коронки (ваши будущие зубы) для каждого пациента. Вы подберете вместе с доктором цвет и
+                материал из которого будут сделаны коронки.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <h2 class="heading">Самые частые вопросы от пациентов</h2>
+          <div class="questions__wrap">
+            <div class="questions__item">
+              <div class="questions__title">
+                <h3>Имплантация - это больно?</h3>
+                <img src="img/questions/arrow.svg" alt="" />
+              </div>
+              <p class="questions__text">
+                Нет, имплантация — это не больно. Мы используем анестетики новейшего поколения. Наша анестезия в 6 раз эффективнее новакаина<br />
+                Болезненные ощущения возможны, в основном только после имплантации
+              </p>
+            </div>
+            <div class="questions__item">
+              <div class="questions__title">
+                <h3>Имплантация - слишком серьезная процедура?</h3>
+                <img src="img/questions/arrow.svg" alt="" />
+              </div>
+              <p class="questions__text">
+                Имплантация хоть и является серьезной процедурой, но вам не стоит беспокоиться. Наши врачи установили около уже около 35 000 имплантатов!
+                <br />
+                <br />
+                Почти все наши пациенты жалеют, что не обратились за лечением раньше. Переносы лечения привели к дополнительным денежным тратам у пациентов
+              </p>
+            </div>
+            <div class="questions__item">
+              <div class="questions__title">
+                <h3>Нужно ли сдавать анализы перед имплантацией?</h3>
+                <img src="img/questions/arrow.svg" alt="" />
+              </div>
+              <p class="questions__text">
+                Да, мы рекомендуем всем пациентам сдавать анализы перед лечением. Мы хотим полностью обезопасить наших пациентов и врачей
+              </p>
+            </div>
+            <div class="questions__item">
+              <div class="questions__title">
+                <h3>имплант может не прижиться?</h3>
+                <img src="img/questions/arrow.svg" alt="" />
+              </div>
+              <p class="questions__text">
+                Да, такие случаи бывают. Мы добились результата приживления в 99%<br />
+                А если имплант не приживется, мы по гарантии заменим вам его
+              </p>
+            </div>
+            <div class="questions__item">
+              <div class="questions__title">
+                <h3>Парадантоз является противопоказанием к имплантации?</h3>
+                <img src="img/questions/arrow.svg" alt="" />
+              </div>
+              <p class="questions__text">
+                Парадантоз уже давно не является противопоказанием в нашей клинике. Наши врачи успешно устанавливали импланты людям с таким заболеванием
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="world">
+        <div class="container">
+          <div class="world__wrap">
+            <div class="world__form-wrap">
+              <h2 class="heading heading--world">
+                У вас есть вопросы<br />
+                специалисту?
+              </h2>
+              <p class="world__form-text">
+                Задайте его здесь, и наш медицинский<br />
+                координатор ответит на все вопросы
+              </p>
+              <form action="" class="form form--world">
+                <textarea name="" placeholder="Ваш вопрос"></textarea>
+                <input type="tel" name="phone" class="phone phone--world" id="phone2" />
+                <button class="btn-pink btn-pink--world">Задать вопрос</button>
+              </form>
+            </div>
+            <p class="world__text"><span>16000 </span>пациентов из 57 стран мира доверили свое лечение KANO</p>
+          </div>
+        </div>
+      </section>
+      <section class="accompaniment">
+        <div class="container">
+          <div class="accompaniment__wrap">
+            <h2 class="heading heading--accompaniment">Сопровождение пациентов в KANO</h2>
+            <p class="accompaniment__text">
+              Все ваше лечения будет контролировать личный<br />
+              медицинский координатор.
+            </p>
+            <ul class="accompaniment__list">
+              <li class="accompaniment__item">
+                <img src="img/accompaniment/icon.svg" alt="" />
+                <p>Подберет удобные для вас даты</p>
+              </li>
+              <li class="accompaniment__item">
+                <img src="img/accompaniment/icon.svg" alt="" />
+                <p>Проконтролирует сроки лечения</p>
+              </li>
+              <li class="accompaniment__item">
+                <img src="img/accompaniment/icon.svg" alt="" />
+                <p>Напомнит о предстоящих процедурах</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="img/accompaniment/img.png" class="accompaniment__img" alt="" />
+      </section>
+      <section class="stories section-scroll" id="stories">
+        <div class="container">
+          <div class="stories__wrap">
+            <h2 class="heading heading--stories">Реальные истории пациентов</h2>
+            <div class="swiper swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide stories__slide" data-video="AR8BFFJQlrY?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/1.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="dzzXN5za97I?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/2.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="ppYguuItp6Q?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/3.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="HefNlmDsBmQ?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/4.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="ulPdHGhB3J0?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/5.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="6iCfa6s44M0?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/6.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="m3XbFJUzUc0?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/7.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="0TZG3GPbD2k?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/8.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="hTxoegEPikk?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/9.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="yx4sN_jy9Yk?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/10.png" class="swiper-lazy" alt="" />
+                </div>
+                <div class="swiper-slide stories__slide" data-video="xltiusShvFc?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
+                  <div class="stories__play">
+                    <img src="img/stories/play.svg" alt="play" />
+                  </div>
+                  <div class="swiper-lazy-preloader"></div>
+                  <img data-src="img/stories/11.png" class="swiper-lazy" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider-btns">
+              <div class="btn-slide button-prev">
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.375 18.75L1.625 10L10.375 1.25" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="btn-slide button-next">
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.625 1.25L10.375 10L1.625 18.75" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="full-block full-block2">
+        <div class="container">
+          <h2 class="heading heading--full-block">
+            У вас уже есть 3D снимок<br />
+            вашей челюсти?
+          </h2>
+          <ul class="full-block__list">
+            <li class="full-block__item">
+              <img src="img/full-block/icon2-1.svg" alt="" />
+              <span>Оставьте заявку и мы проведем с вами <br />дистанционную консультацию </span>
+            </li>
+          </ul>
+          <button class="btn-pink btn-pink--full-block" data-bs-toggle="modal" data-bs-target="#consultation">Дистанционная консультация</button>
+        </div>
+      </section>
+      <section class="specialists">
+        <div class="container">
+          <div class="specialists__wrap">
+            <h2 class="heading heading--specialists">Специалисты по имплантации KANO</h2>
+            <div class="swiper swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Ярощик Тимофей Михайлович</h3>
+                      <p class="specialists__text">
+                        Челюстно-лицевой хирург, имплантолог<br />
+                        Высшая квалификационная категория
+                      </p>
+                      <a href="https://kano.by/vrachi/implantologi/yaroshhik-timofej-mixajlovich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/1.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/1_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Шелег Владимир Леонидович</h3>
+                      <p class="specialists__text">
+                        Врач имплантолог-хирург, ведущий хирург, первая квалификационная категория, лектор (стоматолог-хирург)
+                      </p>
+                      <a href="https://kano.by/vrachi/implantologi/sheleg-vladimir-leonidovich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/2.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/2_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Вербицкая Александра Александровна</h3>
+                      <p class="specialists__text">Хирург-стоматолог, имплантолог Первая квалификационная категория</p>
+                      <a href="https://kano.by/vrachi/implantologi/verbiczkaya-aleksandra-aleksandrovna/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/3.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/3_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Каленкович Юрий Владимирович</h3>
+                      <p class="specialists__text">Хирург-имплантолог</p>
+                      <a href="https://kano.by/vrachi/implantologi/kalenkovich-yuriij-vladimirovich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/4.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/4_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Добрицкий Антон Павлович</h3>
+                      <p class="specialists__text">Эстетические реставрации. Digital Smile design. Лектор. Экспектр Mega Gen</p>
+                      <a href="https://kano.by/vrachi/ortopedy/dobriczkij-anton-pavlovich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/5.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/5_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Шнитко Николай Николаевич</h3>
+                      <p class="specialists__text">Стоматолог-ортопед. Протезирование. Коронки. Виниры. Капы.</p>
+                      <a href="https://kano.by/vrachi/ortopedy/shnitko-nikolaj-nikolaevich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/6.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/6_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Вербицкий Александр Сергеевич</h3>
+                      <p class="specialists__text">Стоматолоог-ортопед. Цифровая стоматология CEREC.</p>
+                      <a href="https://kano.by/vrachi/ortopedy/verbitskiy-aleksand-sergeevich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/7.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/7_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Куель Владислав Иванович</h3>
+                      <p class="specialists__text">Стоматолог-ортопед. Первая квалификационная категория.</p>
+                      <a href="https://kano.by/vrachi/ortopedy/kopiya-degteryov-aleksej-vladimirovich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/8.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/8_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Балацун Евгений Андреевич</h3>
+                      <p class="specialists__text">Стоматолог-ортопед. Первая квалификационная категория.</p>
+                      <a href="https://kano.by/vrachi/ortopedy/kopiya-kuel-vladislav-ivanovich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/9.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/9_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+                <div class="swiper-slide specialists__slide">
+                  <div class="specialists__block">
+                    <div class="specialists__description">
+                      <h3 class="specialists__title">Жуковец Игорь Николаевич</h3>
+                      <p class="specialists__text">Стоматолог-ортопед. Протезы All-On-4/6. Немедленная нагрузка.</p>
+                      <a href="https://kano.by/vrachi/ortopedy/zhukovecz-igor-nikolaevich/" target="_blank" class="btn-outline btn-outline--specialists">Подробнее</a>
+                    </div>
+                    <img src="img/specialists/10.png" alt="" class="specialists__photo_desktop" />
+                    <img src="img/specialists/10_m.png" alt="" class="specialists__photo_mobile" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-btns">
+              <div class="btn-slide button-prev_2">
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.375 18.75L1.625 10L10.375 1.25" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="btn-slide button-next_2">
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.625 1.25L10.375 10L1.625 18.75" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="before-after">
+        <div class="container">
+          <div class="before-after__wrap">
+            <h2 class="heading heading--before-after">Наши пациенты. ДО и ПОСЛЕ</h2>
+            <div class="swiper swiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide before-after__slide">
+                  <img src="img/before-after/1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide before-after__slide">
+                  <img src="img/before-after/2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide before-after__slide">
+                  <img src="img/before-after/3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide before-after__slide">
+                  <img src="img/before-after/4.jpg" alt="" />
+                </div>
+                <div class="swiper-slide before-after__slide">
+                  <img src="img/before-after/5.jpg" alt="" />
+                </div>
+                <div class="swiper-slide before-after__slide">
+                  <img src="img/before-after/6.jpg" alt="" />
+                </div>
+                <div class="swiper-slide before-after__slide">
+                  <img src="img/before-after/7.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <a href="https://kano.by/o-klinike/works-implantacziya/" target="_blank" class="btn-pink btn-pink--before-after">Самые интересные случаи в KANO</a>
+            <div class="slider-btns">
+              <div class="btn-slide button-prev_3">
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.375 18.75L1.625 10L10.375 1.25" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="btn-slide button-next_3">
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.625 1.25L10.375 10L1.625 18.75" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="internship">
+        <div class="container">
+          <div class="internship__wrap">
+            <h2 class="heading heading--internship">
+              Наши доктора стажируются и выступают на<br />
+              курсах мирового масштаба
+            </h2>
+            <div class="swiper swiper4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide internship__slide">
+                  <img src="img/internship/1.png" alt="" />
+                </div>
+                <div class="swiper-slide internship__slide">
+                  <img src="img/internship/2.png" alt="" />
+                </div>
+                <div class="swiper-slide internship__slide">
+                  <img src="img/internship/3.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="heading">Отзывы на независимых порталах</h2>
+          <div class="reviews__wrap">
+            <div class="reviews__item">
+              <img src="img/reviews/1.svg" class="reviews__logo" alt="" />
+              <img src="img/reviews/rating1.svg" alt="" class="reviews__rating" />
+              <span class="reviews__number">4,9</span>
+            </div>
+            <div class="reviews__item">
+              <img src="img/reviews/2.svg" class="reviews__logo" alt="" />
+              <img src="img/reviews/rating2.svg" alt="" class="reviews__rating" />
+              <span class="reviews__number">4,5</span>
+            </div>
+            <div class="reviews__item">
+              <img src="img/reviews/3.svg" class="reviews__logo" alt="" />
+              <img src="img/reviews/rating3.svg" alt="" class="reviews__rating" />
+              <span class="reviews__number">4,2</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clinics">
+        <div class="container">
+          <div class="clinics__wrap">
+            <div class="clincs__images">
+              <img src="img/clinics/1.png" class="clinics__img" alt="" />
+              <img src="img/clinics/2.png" class="clinics__img active" alt="" />
+              <img src="img/clinics/3.png" class="clinics__img" alt="" />
+            </div>
+            <div class="clincs__content">
+              <h2 class="heading heading--clinics">3 клиники в Минске</h2>
+              <ul class="clincs__list">
+                <li class="clinics__item">
+                  <img src="img/clinics/icon1.svg" class="clinics__icon" alt=""></img>
+                  <div class="clinics__description">
+                    <h3>ул. Казимировская, 21</h3>
+                    <p>ст. м. «Каменная горка»</p>
+                  </div>
+                </li>
+                <li class="clinics__item">
+                  <img src="img/clinics/icon2.svg" class="clinics__icon" alt=""></img>
+                  <div class="clinics__description">
+                    <h3>пр-т Независимости, 92</h3>
+                    <p>ст. м. «Московская»</p>
+                  </div>
+                </li>
+                <li class="clinics__item">
+                  <img src="img/clinics/icon3.svg" class="clinics__icon" alt=""></img>
+                  <div class="clinics__description">
+                    <h3>ул. Неманская, 4</h3>
+                    <p>ст. м. «Каменная Горка»</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="request">
+        <div class="request__wrap">
+          <div id="map"></div>
+          <div class="request__block">
+            <h2 class="heading heading--request">Запишитесь на консультацию!</h2>
+            <p class="request__text">
+              В ближайшее время с Вами свяжется медицинский координатор и проконсультирует вас по условиям и<br />
+              стоимости лечения, подберёт врача и запишет Вас на<br />
+              приём.
+            </p>
+            <button class="btn-pink" data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</button>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="container">
+          <div class="footer__wrap">
+            <p class="footer__text">1998-2021 Клиника KANO</p>
+            <a href="#" class="footer__link">Публичный договор оказания услуг</a>
+          </div>
+        </div>
+      </section>
+      <!-- consultation -->
+      <div class="modal fade" id="consultation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="consultation" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--consultation modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--consultation">
+              <h5 class="modal-title">Оставьте ваш номер телефона</h5>
+              <div class="modal-text-wrap"></div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <form action="" class="form form--consultation">
+                <input type="text" name="name" class="name" placeholder="Ваше имя" />
+                <input type="tel" name="phone" class="phone phone--consultation" id="phone3" />
+                <button class="btn-pink btn-pink--consultation">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- webinar -->
+      <div class="modal fade" id="webinar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="webinar" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--webinar modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--webinar">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-header--webinar">
+                <h5 class="modal-title modal-title--webinar">Бесплатная запись вебинара</h5>
+              </div>
+              <h5 class="modal-title">“Всё о дентальной имплантации”</h5>
+              <p class="modal-text">Детальный разбор всех возможных нюансов о имплантации</p>
+              <img class="modal-img-webinar" src="img/modal-img-webinar.png" alt="Бесплатная запись вебинара" />
+              <form action="" class="form form--webinar">
+                <input type="tel" name="phone" class="phone phone--webinar" id="phone4" />
+                <button class="btn-pink btn-pink--webinar">Получить запись</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="consultation2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="consultation2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--consultation">
+          <div class="modal-content">
+            <div class="modal-body modal-body--consultation">
+              <h5 class="modal-title">У вас есть вопросы?</h5>
+              <p class="modal-text modal-text--consultation">Давайте мы перезвоним вам и всё расскажем</p>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <form action="" class="form form--consultation">
+                <input type="tel" name="phone" class="phone phone--consultation" id="phone4" />
+                <button class="btn-pink btn-pink--consultation">Жду звонка</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- thanks -->
+      <div class="modal fade" id="thanks" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="thanks" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--thanks modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--thanks">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <svg width="58" height="72" viewBox="0 0 58 72" fill="none" xmlns="http://www.w3.org/2000/svg" class="modal-svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5894 48.8323C19.1119 47.9283 19.6383 48.3274 20.9643 48.3548L34.8538 48.214C36.8329 48.3627 35.7167 48.0692 36.3777 48.8205C37.11 48.3666 36.7735 48.214 37.6325 48.2805C39.7976 48.4488 38.2183 48.2374 38.8754 49.0436L39.6076 48.2609C50.6471 48.6249 52.179 44.0423 55.6741 35.3038C55.8899 34.2681 56.1728 33.2472 56.5212 32.2475L56.5687 32.1066C57.4236 26.4205 58.3617 23.3172 57.8353 17.1341C56.9843 7.26461 52.4679 0.447543 41.943 0.024901C35.7958 -0.22164 33.9474 1.39457 28.8491 3.453C21.8668 -0.511229 9.79025 -2.22528 4.33976 4.98312C-1.59759 12.8411 -0.148875 22.1784 1.20484 31.2026C1.28401 31.5118 1.3513 31.8405 1.43046 32.177C1.61648 32.8876 1.76446 33.6073 1.87378 34.3333C3.50062 37.8083 4.10623 41.6904 7.10261 44.5354C13.3566 50.472 15.1655 46.7504 18.5815 48.8401L18.5894 48.8323ZM29.2766 5.92624C32.839 4.45873 34.0661 2.93252 38.4954 2.40422C61.7342 -0.358608 57.4711 30.5256 50.089 42.0035C48.0149 45.232 45.5766 46.1086 41.5472 46.1164H16.2145C12.4541 46.089 9.94858 44.8289 7.76363 41.9448C1.48192 33.6563 -4.78793 -1.37999 20.0579 2.45118C24.1943 3.08906 26.5059 5.35098 29.2766 5.92624Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.1827 63.0378L33.0798 65.9258C32.0981 66.9863 30.309 68.4069 28.8801 68.8882C27.4353 68.4421 24.9496 66.9668 24.5735 65.5266L33.1827 63.0378ZM33.1431 58.5883V60.5449C31.9754 61.3667 26.1687 62.936 24.435 63.1904L24.526 60.8776L33.1431 58.5883ZM24.6487 54.8941H33.0362C33.2698 56.4242 33.5389 55.9624 31.9121 56.5103L24.3915 58.6078L24.6487 54.8941ZM38.8707 49.024C38.2136 48.2179 39.7929 48.4331 37.6278 48.2609C36.757 48.1944 37.1053 48.3509 36.373 48.801L34.1604 52.7143L23.6315 52.7769L20.9636 48.3548C19.6376 48.3274 19.1112 47.9283 18.5887 48.8323C22.1511 55.9585 21.8661 51.1803 22.2778 59.0422C21.0547 59.9501 21.4228 59.2183 20.9597 60.5371C22.6617 62.4155 22.349 61.6368 22.349 63.7265C21.7315 64.2392 21.3476 64.4309 21.0626 65.1901C21.8107 66.6341 21.6405 65.5814 22.7409 67.0529C23.9798 68.7082 27.3364 71.338 29.5292 70.9662C30.9463 70.7236 32.7235 69.1465 33.8833 68.2816C35.9693 66.7163 35.3874 65.0062 35.4666 62.5212C39.029 60.6584 35.6843 59.9501 35.3558 59.7818L35.3795 57.966C36.8797 56.8233 36.3612 58.0913 36.9628 56.2676C35.902 54.8236 36.6976 55.9507 35.2964 55.0936L38.8588 49.0553L38.8707 49.024Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.4483 28.6316C37.3346 28.6629 34.544 33.3276 28.48 33.1046C21.5016 32.8737 20.6981 27.5946 17.9155 28.9603C16.8586 32.6858 26.2278 35.6952 29.6833 35.5191C32.4422 35.3665 42.603 31.5783 39.4483 28.6316Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.7382 23.0902C36.4363 23.7711 36.4837 22.6989 38.3916 22.6989C40.4064 22.6793 40.4657 23.9159 42.2509 22.9689C42.6784 20.6404 40.5053 20.2648 38.3837 20.3039C36.5431 20.3195 33.8397 20.8479 34.7382 23.0902Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.719 23.1178C17.4765 23.7087 17.5794 22.7265 19.3962 22.6795C21.3476 22.6169 21.1972 23.5756 23.0932 23.1804C24.1342 20.6954 21.4426 20.2219 19.3883 20.2845C17.5042 20.3393 14.9709 20.9224 15.723 23.1178H15.719Z" fill="#00BA97" />
+              </svg>
+              <p class="modal-text modal-text--thanks">Спасибо Ваша заявка отправлена</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- redirection -->
+      <div class="modal fade" id="redirection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="redirection" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--redirection modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--redirection">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <svg width="58" height="72" viewBox="0 0 58 72" fill="none" xmlns="http://www.w3.org/2000/svg" class="modal-svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5894 48.8323C19.1119 47.9283 19.6383 48.3274 20.9643 48.3548L34.8538 48.214C36.8329 48.3627 35.7167 48.0692 36.3777 48.8205C37.11 48.3666 36.7735 48.214 37.6325 48.2805C39.7976 48.4488 38.2183 48.2374 38.8754 49.0436L39.6076 48.2609C50.6471 48.6249 52.179 44.0423 55.6741 35.3038C55.8899 34.2681 56.1728 33.2472 56.5212 32.2475L56.5687 32.1066C57.4236 26.4205 58.3617 23.3172 57.8353 17.1341C56.9843 7.26461 52.4679 0.447543 41.943 0.024901C35.7958 -0.22164 33.9474 1.39457 28.8491 3.453C21.8668 -0.511229 9.79025 -2.22528 4.33976 4.98312C-1.59759 12.8411 -0.148875 22.1784 1.20484 31.2026C1.28401 31.5118 1.3513 31.8405 1.43046 32.177C1.61648 32.8876 1.76446 33.6073 1.87378 34.3333C3.50062 37.8083 4.10623 41.6904 7.10261 44.5354C13.3566 50.472 15.1655 46.7504 18.5815 48.8401L18.5894 48.8323ZM29.2766 5.92624C32.839 4.45873 34.0661 2.93252 38.4954 2.40422C61.7342 -0.358608 57.4711 30.5256 50.089 42.0035C48.0149 45.232 45.5766 46.1086 41.5472 46.1164H16.2145C12.4541 46.089 9.94858 44.8289 7.76363 41.9448C1.48192 33.6563 -4.78793 -1.37999 20.0579 2.45118C24.1943 3.08906 26.5059 5.35098 29.2766 5.92624Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.1827 63.0378L33.0798 65.9258C32.0981 66.9863 30.309 68.4069 28.8801 68.8882C27.4353 68.4421 24.9496 66.9668 24.5735 65.5266L33.1827 63.0378ZM33.1431 58.5883V60.5449C31.9754 61.3667 26.1687 62.936 24.435 63.1904L24.526 60.8776L33.1431 58.5883ZM24.6487 54.8941H33.0362C33.2698 56.4242 33.5389 55.9624 31.9121 56.5103L24.3915 58.6078L24.6487 54.8941ZM38.8707 49.024C38.2136 48.2179 39.7929 48.4331 37.6278 48.2609C36.757 48.1944 37.1053 48.3509 36.373 48.801L34.1604 52.7143L23.6315 52.7769L20.9636 48.3548C19.6376 48.3274 19.1112 47.9283 18.5887 48.8323C22.1511 55.9585 21.8661 51.1803 22.2778 59.0422C21.0547 59.9501 21.4228 59.2183 20.9597 60.5371C22.6617 62.4155 22.349 61.6368 22.349 63.7265C21.7315 64.2392 21.3476 64.4309 21.0626 65.1901C21.8107 66.6341 21.6405 65.5814 22.7409 67.0529C23.9798 68.7082 27.3364 71.338 29.5292 70.9662C30.9463 70.7236 32.7235 69.1465 33.8833 68.2816C35.9693 66.7163 35.3874 65.0062 35.4666 62.5212C39.029 60.6584 35.6843 59.9501 35.3558 59.7818L35.3795 57.966C36.8797 56.8233 36.3612 58.0913 36.9628 56.2676C35.902 54.8236 36.6976 55.9507 35.2964 55.0936L38.8588 49.0553L38.8707 49.024Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.4483 28.6316C37.3346 28.6629 34.544 33.3276 28.48 33.1046C21.5016 32.8737 20.6981 27.5946 17.9155 28.9603C16.8586 32.6858 26.2278 35.6952 29.6833 35.5191C32.4422 35.3665 42.603 31.5783 39.4483 28.6316Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.7382 23.0902C36.4363 23.7711 36.4837 22.6989 38.3916 22.6989C40.4064 22.6793 40.4657 23.9159 42.2509 22.9689C42.6784 20.6404 40.5053 20.2648 38.3837 20.3039C36.5431 20.3195 33.8397 20.8479 34.7382 23.0902Z" fill="#00BA97" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.719 23.1178C17.4765 23.7087 17.5794 22.7265 19.3962 22.6795C21.3476 22.6169 21.1972 23.5756 23.0932 23.1804C24.1342 20.6954 21.4426 20.2219 19.3883 20.2845C17.5042 20.3393 14.9709 20.9224 15.723 23.1178H15.719Z" fill="#00BA97" />
+              </svg>
+              <p class="modal-text modal-text--redirection">Если в течение 5 секунд не произошло перенаправление нажмите здесь:</p>
+              <a href="https://youtu.be/xzfPF4naaGQ" class="modal-redirection-link" target="_blank">Получить запись</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- implants1 -->
+      <div class="modal fade" id="implants1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="implants1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--implants modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--implants">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title">Классическая имплантация</h5>
+              <p class="modal-text modal-text--implants">
+                Классическая двухэтапная имплантация – надежная и проверенная временем технология восстановления зубов на верхней и нижней челюсти. Суть
+                методики заключается в том, что вживление в кость стального штифта осуществляют на первом этапе, а установку временной и постоянной коронки
+                – на втором.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- implants2 -->
+      <div class="modal fade" id="implants2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="implants2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--implants modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--implants">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title">Комплексная имплантация “All on 4/6” (Всё на 4/6)</h5>
+              <p class="modal-text modal-text--implants">
+                Методика протезирования на 4/6 имплантах «All on 4/6» применяется при частичной потере большого количества зубов или же полном отсутствии
+                целого зубного ряда. Суть технологии заключается в том, что на месте утерянных зубов вживляется сразу 4/6 опорных штифта, на которых в
+                последствии крепится протез из акриловой пластмассы.
+              </p>
+              <div class="modal-divider"></div>
+              <ul class="modal-list">
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/1.svg" alt="" />
+                  <p>Не требует пластики костной ткани</p>
+                </li>
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/2.svg" alt="" />
+                  <p>Подходит в случае полной потери зубов</p>
+                </li>
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/3.svg" alt="" />
+                  <p>Значительно дешевле, чем отдельные импланты</p>
+                </li>
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/4.svg" alt="" />
+                  <p>Привыкание меньше, чем за неделю</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- implants3 -->
+      <div class="modal fade" id="implants3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="implants3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--implants modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--implants">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title">Одномоментная имплантация</h5>
+              <p class="modal-text modal-text--implants">
+                Одномоментная имплантация зубов (ее также называют немедленной, моментальной имплантацией) - это метод, при котором имплант вживляется в
+                десну сразу после удаления зуба, за один прием. То есть вам сделали анестезию, удалили ваш родной зуб – и сразу же в костную ткань челюсти
+                установили имплантат.
+              </p>
+              <div class="modal-divider"></div>
+              <ul class="modal-list">
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/5.svg" alt="" />
+                  <p>Установка импланта и коронки за 1 час</p>
+                </li>
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/6.svg" alt="" />
+                  <p>Быстрое восстановление</p>
+                </li>
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/4.svg" alt="" />
+                  <p>Минимум дискомфорта и болевых ощущений</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- implants4 -->
+      <div class="modal fade" id="implants4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="implants4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--implants modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--implants">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title">Cкуловая имплантация</h5>
+              <p class="modal-text modal-text--implants">
+                Современнейшая методика протезирования зубов верхней челюсти, при сильной атрофии кости, когда другие виды имплантации невозможны. Операция
+                проводится высококвалифицированными имплантологами-ювелирами, под сильной анестезией
+              </p>
+              <div class="modal-divider"></div>
+              <h6 class="modal-list-title">Применяется при:</h6>
+              <ul class="modal-list">
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/7.svg" alt="" />
+                  <p>Тотальной атрофии костной ткани</p>
+                </li>
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/7.svg" alt="" />
+                  <p>Невозможность проведения процедуры синус-лифтинг</p>
+                </li>
+                <li class="modal-item">
+                  <img src="img/implants/icons-mobile/7.svg" alt="" />
+                  <p>Невозможность вживления классических или компрессионных одноэтапных имплантатов</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- story -->
+      <div class="modal fade" id="story" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="story" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--story modal-dialog-centered">
+          <div class="modal-content modal-content--story">
+            <div class="modal-body modal-body--story">
+              <button type="button" class="btn-close btn-close--story" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-video-wrap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js" integrity="sha512-3YT22Fw1AUW4I3ww7mROUxleX/WhHY1uh6ZbWL5bRyqDNc8UE8UQf4otTicqtpzXEeSa2Ct3aZ/8gpjVcsz9LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.js" integrity="sha512-Re9cWc8hkn7aWsPHHlX+FusmIyrNeKQy17imsq9KxIPauDx1XGnBhJn7+ItWi7fwT35i+81pDJGQtolFwnUXZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

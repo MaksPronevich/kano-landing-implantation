@@ -1,0 +1,107 @@
+.blockquotes {
+	padding-bottom: 65px;
+
+	@include media-breakpoint-down($md) {
+		padding-bottom: 25px;
+	}
+}
+
+.blockquotes__images-wrap {
+	display: flex;
+	justify-content: space-around;
+
+	@include media-breakpoint-down($sm) {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		gap: 20px;
+		justify-content: center;
+	}
+}
+
+.blockquotes__images-item {
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		border-radius: 50%;
+		background: rgba(#f2efef, 0.54);
+		transition: $transition;
+	}
+
+	&:hover,
+	&.active {
+		&:after {
+			background: none;
+		}
+	}
+
+	img {
+		@include media-breakpoint-down($lg) {
+			width: 65px;
+			height: 65px;
+		}
+
+		@include media-breakpoint-down($md) {
+			width: 58px;
+			height: 58px;
+		}
+	}
+}
+
+.blockquotes__texts-wrap {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 66px;
+
+	@include media-breakpoint-down($md) {
+		margin-top: 26px;
+	}
+}
+
+.blockquotes__texts-item {
+	display: none;
+	text-align: center;
+
+	&.active {
+		display: block;
+	}
+}
+
+.blockquotes__name {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.015em;
+
+	span {
+		color: $green;
+	}
+
+	@include media-breakpoint-down($md) {
+		font-size: 12px;
+		line-height: 14px;
+	}
+}
+
+.blockquotes__quote {
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.015em;
+	color: $pink;
+	margin-top: 11px;
+
+	@include media-breakpoint-down($md) {
+		font-size: 14px;
+		line-height: 17px;
+	}
+}

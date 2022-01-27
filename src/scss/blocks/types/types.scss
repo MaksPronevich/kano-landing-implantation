@@ -1,0 +1,73 @@
+.types {
+	padding: 110px 0px;
+
+	@include media-breakpoint-down($xl) {
+		padding-top: 80px;
+	}
+
+	@include media-breakpoint-down($md) {
+		padding: 35px 0px;
+	}
+}
+
+.types-nav {
+	margin-top: 44px;
+
+	@include media-breakpoint-down($md) {
+		display: none;
+	}
+}
+
+.types-nav__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 15px;
+
+	@include media-breakpoint-down($xl) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto;
+		gap: 15px;
+	}
+}
+
+.types-nav__btn {
+	font-size: 24px;
+	line-height: 29px;
+	color: $gray-light;
+	background-color: $gray-bg;
+	width: 100%;
+	padding: 17px 0px;
+	border-radius: 10px 10px 0px 0px;
+	cursor: pointer;
+	transition: $transition;
+
+	&.active,
+	&:hover {
+		color: $black;
+		background-color: #f9f9f9;
+		box-shadow: 0px -2px 5px rgba($black, 0.1);
+	}
+
+	@include media-breakpoint-down($xl) {
+		font-size: 20px;
+	}
+}
+
+.types-content {
+	background-color: #f9f9f9;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px -3px 59px rgba($black, 0.1);
+
+	@include media-breakpoint-down($md) {
+		display: none;
+	}
+}
+
+.types-content__item {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}

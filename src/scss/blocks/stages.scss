@@ -1,0 +1,146 @@
+.stages__wrap {
+	padding: 110px 45px 60px;
+	border-radius: 10px;
+	position: relative;
+	background-color: $main-bg;
+
+	@include media-breakpoint-down($xl) {
+		padding-top: 80px;
+	}
+
+	@include media-breakpoint-down($md) {
+		padding: 0;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: 92%;
+		height: 105%;
+		position: absolute;
+		background: rgba(126, 91, 91, 0.08);
+		filter: blur(31px);
+		border-radius: 30px;
+		left: 50%;
+		transform: translate(-50%);
+		top: 15px;
+		z-index: -1;
+
+		@include media-breakpoint-down($md) {
+			background: none;
+		}
+	}
+}
+
+.stages-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	gap: 40px;
+
+	margin: 65px 0px;
+
+	@include media-breakpoint-down($xl) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+
+	@include media-breakpoint-down($md) {
+		display: none;
+	}
+}
+
+.stages-list__number {
+	font-size: 36px;
+	line-height: 43px;
+	color: $green;
+	border-bottom: 2px solid $green;
+	width: 80px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+.stages-list__title {
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.015em;
+	text-transform: uppercase;
+	color: $green;
+
+	@include media-breakpoint-down($xl) {
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+	// @include media-breakpoint-down($md) {
+	// 	font-size: 14px;
+	// 	line-height: 17px;
+	// 	margin-bottom: 8px;
+	// }
+}
+
+.stages-list_mobile {
+	display: none;
+	position: relative;
+
+	&:before {
+		content: '';
+		height: 95%;
+		position: absolute;
+		top: 0;
+		left: 17px;
+		border-left: 2px solid $green;
+		z-index: 1;
+	}
+
+	@include media-breakpoint-down($md) {
+		display: block;
+		margin-top: 28px;
+		margin-bottom: 33px;
+	}
+}
+
+.stages-list__item_mobile {
+	display: flex;
+	align-items: center;
+	color: #00ba97;
+	text-align: left;
+	margin-bottom: 26px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.stages-list__number_mobile {
+	font-size: 18px;
+	line-height: 21px;
+	width: 36px;
+	height: 36px;
+	border: 2px solid #00ba97;
+	background: #f2efef;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 2;
+}
+
+.stages-list__title_mobile {
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: -0.015em;
+	text-transform: uppercase;
+	margin-left: 20px;
+
+	br {
+		@include media-breakpoint-down($md) {
+			display: none;
+		}
+
+		@include media-breakpoint-down($sm) {
+			display: block;
+		}
+	}
+}

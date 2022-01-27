@@ -1,0 +1,38 @@
+.footer {
+	background-color: $green;
+	padding: 25px 0px;
+
+	@include media-breakpoint-down($md) {
+		padding: 12px 0px;
+	}
+}
+
+.footer__wrap {
+	display: flex;
+	justify-content: space-between;
+
+	@include media-breakpoint-down($md) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.footer__text,
+.footer__link {
+	font-size: 13px;
+	line-height: 16px;
+	color: $white;
+	text-transform: uppercase;
+
+	@include media-breakpoint-down($md) {
+		font-size: 10px;
+		line-height: 12px;
+		color: rgba(255, 255, 255, 0.46);
+	}
+}
+
+.footer__link {
+	@include media-breakpoint-down($md) {
+		margin-top: 6px;
+	}
+}

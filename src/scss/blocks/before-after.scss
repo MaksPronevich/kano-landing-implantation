@@ -1,0 +1,18 @@
+.before-after {
+	padding: 76px 0px 100px;
+
+	@include media-breakpoint-down($md) {
+		padding: 0px 0px 30px;
+	}
+}
+
+.before-after__wrap {
+	position: relative;
+	text-align: center;
+}
+
+.before-after__slide {
+	img {
+		width: 100%;
+	}
+}

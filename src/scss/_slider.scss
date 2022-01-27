@@ -1,0 +1,75 @@
+.swiper {
+	position: relative;
+}
+
+.slider-btns {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	z-index: 2;
+	right: 20px;
+	background: transparent;
+
+	@include media-breakpoint-down($md) {
+		display: none;
+	}
+}
+
+.btn-slide {
+	width: 56px;
+	height: 56px;
+	background: $white;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: $transition;
+	position: relative;
+	cursor: pointer;
+
+	&:first-child {
+		margin-right: 13px;
+	}
+
+	&:hover {
+		background-color: $green;
+
+		&:after {
+			background-color: $green;
+		}
+
+		path {
+			stroke: $white;
+		}
+	}
+
+	&:after {
+		display: block;
+		content: '';
+		width: 66%;
+		height: 66%;
+		position: absolute;
+		top: 28px;
+		left: 50%;
+		transform: translate(-50%);
+		background: rgba(0, 0, 0, 0.12);
+		opacity: 0.5;
+		filter: blur(22px);
+		border-radius: 50px;
+		z-index: -1;
+	}
+
+	@include media-breakpoint-down($lg) {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.swiper-lazy-preloader {
+	margin-top: 100px;
+
+	@include media-breakpoint-down($md) {
+		margin-top: 40px;
+	}
+}

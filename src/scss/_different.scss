@@ -1,0 +1,509 @@
+.heading {
+	font-size: 36px;
+	line-height: 43px;
+	letter-spacing: 0.01rem;
+	color: $black;
+	text-align: center;
+
+	@include media-breakpoint-down($xl) {
+		font-size: 25px;
+		line-height: 27px;
+	}
+
+	@include media-breakpoint-down($md) {
+		font-size: 24px;
+		line-height: 28px;
+		text-align: left;
+	}
+
+	&.center {
+		text-align: center;
+	}
+
+	&--materials {
+		br {
+			@include media-breakpoint-down($md) {
+				display: none;
+			}
+		}
+	}
+
+	&--full-block {
+		color: $white;
+		text-align: left;
+		position: relative;
+		z-index: 1;
+
+		span {
+			border-bottom: 2px solid $white;
+		}
+	}
+
+	&--problems {
+		text-align: left;
+	}
+
+	&--answer {
+		text-align: left;
+		margin-bottom: 38px;
+
+		@include media-breakpoint-down($xl) {
+			margin-bottom: 28px;
+		}
+
+		@include media-breakpoint-down($md) {
+			margin-bottom: 21px;
+			color: $green;
+		}
+	}
+
+	&--world {
+		color: $white;
+		text-align: center;
+
+		@include media-breakpoint-down($md) {
+			text-align: center;
+		}
+	}
+
+	&--accompaniment {
+		color: $white;
+		text-align: left;
+	}
+
+	&--stories,
+	&--specialists,
+	&--before-after,
+	&--internship {
+		margin-bottom: 70px;
+
+		@include media-breakpoint-down($md) {
+			margin-bottom: 26px;
+		}
+
+		br {
+			@include media-breakpoint-down($md) {
+				display: none;
+			}
+		}
+	}
+
+	&--clinics {
+		text-align: left;
+	}
+
+	&--request {
+		text-align: left;
+
+		@include media-breakpoint-down($md) {
+			text-align: center;
+		}
+	}
+}
+
+.btn-pink {
+	color: $white;
+	background-color: $pink;
+	padding: 20px 40px;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0px 8px 8px rgba($pink, 0.6);
+	transition: $transition;
+
+	&:hover {
+		box-shadow: none;
+	}
+
+	@include media-breakpoint-down($xl) {
+		font-size: 20px;
+		padding: 12px 20px;
+		border-radius: 5px;
+	}
+
+	@include media-breakpoint-down($md) {
+		font-size: 18px;
+		padding: 12px 16px;
+	}
+
+	@include media-breakpoint-down($sm) {
+		padding: 12px 14px;
+		line-height: 21px;
+	}
+
+	&--first-screen {
+		position: relative;
+		z-index: 1;
+
+		@include media-breakpoint-down($sm) {
+			width: 100%;
+		}
+	}
+
+	&--stages {
+		display: block;
+		margin: 0 auto;
+
+		@include media-breakpoint-down($sm) {
+			width: 100%;
+		}
+	}
+
+	&--materials {
+		padding: 20px;
+
+		@include media-breakpoint-down($md) {
+			margin-top: 25px;
+		}
+
+		@include media-breakpoint-down($sm) {
+			width: 100%;
+		}
+	}
+
+	&--full-block {
+		position: relative;
+		z-index: 1;
+
+		@include media-breakpoint-down($xs) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&--answer {
+		margin-top: 50px;
+
+		@include media-breakpoint-down($md) {
+			margin-top: 20px;
+		}
+
+		@include media-breakpoint-down($xs) {
+			width: 100%;
+		}
+	}
+
+	&--world {
+		@include media-breakpoint-down($lg) {
+			width: 100%;
+		}
+	}
+
+	&--before-after {
+		display: inline-block;
+		margin: 50px auto 0px;
+
+		&:hover {
+			color: $white;
+		}
+
+		@include media-breakpoint-down($md) {
+			margin-top: 30px;
+		}
+	}
+
+	&--consultation {
+		width: 100%;
+	}
+
+	&--webinar {
+		font-size: 18px;
+		padding: 15px 24px;
+
+		@include media-breakpoint-down($md) {
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+}
+
+.btn-outline {
+	font-weight: 500;
+	color: $pink;
+	background: none;
+	font-size: 20px;
+	line-height: 24px;
+
+	@include media-breakpoint-down($md) {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	&--specialists {
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+	}
+}
+
+.iti {
+	display: block;
+}
+
+.iti__country-list {
+	z-index: 20;
+}
+
+.iti__flag {
+	background-image: url('../img/flags.png');
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.iti__flag {
+		background-image: url('../img/flags@2x.png');
+	}
+}
+
+.form {
+	&--materials {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include media-breakpoint-down($xl) {
+			justify-content: flex-start;
+		}
+
+		@include media-breakpoint-down($md) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.iti {
+			width: 274px;
+
+			@include media-breakpoint-down($xl) {
+				width: 355px;
+			}
+
+			@include media-breakpoint-down($md) {
+				width: 274px;
+			}
+
+			@include media-breakpoint-down($sm) {
+				width: 100%;
+			}
+		}
+
+		.iti__flag-container {
+			top: -10px;
+
+			@include media-breakpoint-down($md) {
+				top: -5px;
+			}
+		}
+
+		.iti--separate-dial-code .iti__selected-flag {
+			background: transparent;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			color: #595858;
+
+			@include media-breakpoint-down($md) {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&--world {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		textarea {
+			background: #00a586;
+			border-radius: 10px;
+			padding: 22px 15px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 21px;
+			width: 100%;
+			height: 178px;
+			resize: none;
+			color: $white;
+
+			&.error {
+				border: 1px solid #ff0008;
+			}
+
+			&::placeholder {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 21px;
+				color: $green;
+
+				@include media-breakpoint-down($md) {
+					font-size: 14px;
+					line-height: 16px;
+				}
+			}
+
+			@include media-breakpoint-down($md) {
+				height: 100px;
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+
+		.iti--separate-dial-code .iti__selected-flag {
+			color: $white;
+			background: transparent;
+		}
+
+		.iti__flag-container {
+			top: -8px;
+		}
+
+		.iti {
+			font-weight: 500;
+			margin: 32px auto 20px;
+			width: 260px;
+			font-size: 18px;
+
+			@include media-breakpoint-down($lg) {
+				width: 100%;
+			}
+		}
+	}
+
+	&--consultation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.name {
+			background: transparent;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #c5c4c4;
+			font-weight: 400;
+			font-size: 18px;
+			width: 100%;
+
+			&::placeholder {
+				color: $gray-medium;
+			}
+
+			&.error {
+				border-bottom: 1px solid #ff0008;
+			}
+		}
+
+		.iti {
+			font-size: 18px;
+			font-weight: 400;
+			margin: 30px 0px 50px;
+			width: 100%;
+		}
+
+		.iti--separate-dial-code .iti__selected-flag {
+			color: $black;
+			font-size: 19px;
+			background: transparent;
+		}
+
+		.iti__flag-container {
+			top: -10px;
+		}
+	}
+
+	&--webinar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include media-breakpoint-down($md) {
+			flex-direction: column;
+		}
+
+		.iti {
+			font-size: 18px;
+			font-weight: 400;
+		}
+
+		.iti--separate-dial-code .iti__selected-flag {
+			color: $black;
+			font-size: 19px;
+			background: transparent;
+		}
+
+		.iti__flag-container {
+			top: -10px;
+		}
+	}
+}
+
+.phone {
+	border-bottom: 1px solid #c5c4c4;
+	background: transparent;
+
+	&.error {
+		border-bottom: 1px solid #ff0008;
+	}
+
+	&--materials {
+		width: 100%;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		color: #595858;
+		padding-bottom: 15px;
+
+		&::placeholder {
+			color: #cdcdcd;
+		}
+
+		@include media-breakpoint-down($xl) {
+			width: 80%;
+		}
+
+		@include media-breakpoint-down($md) {
+			font-size: 18px;
+			padding-left: 90px;
+			padding-bottom: 10px;
+		}
+
+		@include media-breakpoint-down($sm) {
+			width: 100%;
+		}
+	}
+
+	&--world {
+		width: 100%;
+		display: block;
+		color: $white;
+		font-size: 18px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #00a586;
+
+		&::placeholder {
+			color: #00dfb5;
+		}
+	}
+
+	&--consultation {
+		display: block;
+		width: 100%;
+		padding-bottom: 10px;
+		padding-left: 95px !important;
+
+		&::placeholder {
+			color: $gray-medium;
+		}
+	}
+
+	&--webinar {
+		width: 220px;
+		font-weight: 400;
+		font-size: 18px;
+		padding-bottom: 10px;
+		padding-left: 95px !important;
+
+		&::placeholder {
+			color: $gray-medium;
+		}
+
+		@include media-breakpoint-down($md) {
+			width: 100%;
+		}
+	}
+}

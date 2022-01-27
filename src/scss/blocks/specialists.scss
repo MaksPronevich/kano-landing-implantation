@@ -1,0 +1,87 @@
+.specialists {
+	background-color: #eaeaea;
+	padding: 68px 0px 115px;
+
+	@include media-breakpoint-down($md) {
+		padding: 32px 0px 30px;
+		background: none;
+	}
+}
+
+.specialists__wrap {
+	position: relative;
+}
+
+.specialists__block {
+	background: url('../img/specialists/pattern.png') $white;
+	padding: 50px 300px 30px 44px;
+	background-size: 190px 190px;
+	background-repeat: no-repeat;
+	background-position: top -10px right -10px;
+	position: relative;
+	height: 361px;
+	border-radius: 10px;
+	position: relative;
+
+	@include media-breakpoint-down($md) {
+		background: url('../img/specialists/pattern-2.png') $white;
+		background-repeat: no-repeat;
+		background-position: top -10px right -10px;
+		padding: 20px 85px 20px 16px;
+		height: 150px;
+	}
+}
+
+.specialists__description {
+	height: 100%;
+	position: relative;
+}
+
+.specialists__title {
+	font-size: 30px;
+	line-height: 36px;
+	color: $green;
+	margin-bottom: 22px;
+
+	@include media-breakpoint-down($md) {
+		font-size: 14px;
+		line-height: 15px;
+		margin-bottom: 7px;
+	}
+}
+
+.specialists__text {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 18px;
+	color: $gray;
+
+	@include media-breakpoint-down($md) {
+		font-size: 8px;
+		line-height: 9px;
+	}
+}
+
+.specialists__photo_desktop {
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	z-index: 99999999999;
+
+	@include media-breakpoint-down($md) {
+		display: none;
+	}
+}
+
+.specialists__photo_mobile {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 113px;
+	height: 135px;
+
+	@include media-breakpoint-down($md) {
+		display: block;
+	}
+}

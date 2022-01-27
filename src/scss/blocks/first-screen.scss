@@ -1,0 +1,147 @@
+.first-screen {
+	background-color: $secondary-bg;
+	overflow: hidden;
+}
+
+.first-screen__wrap {
+	padding-top: 120px;
+	padding-bottom: 40px;
+	position: relative;
+
+	@include media-breakpoint-down($md) {
+		padding-top: 12px;
+		padding-bottom: 16px;
+	}
+}
+
+.first-screen__title {
+	font-size: 50px;
+	line-height: 60px;
+	color: $black;
+	width: 624px;
+
+	@include media-breakpoint-down($xl) {
+		font-size: 40px;
+		line-height: 45px;
+	}
+
+	@include media-breakpoint-down($md) {
+		font-size: 24px;
+		line-height: 29px;
+		width: 100%;
+	}
+
+	span {
+		color: $green;
+	}
+}
+
+.first-screen__caption {
+	font-weight: 500;
+	margin: 25px 0px 45px;
+	width: 474px;
+	line-height: 28px;
+	letter-spacing: -0.015em;
+
+	@include media-breakpoint-down($xl) {
+		font-size: 20px;
+		line-height: 28px;
+		margin: 25px 0px 30px;
+	}
+
+	@include media-breakpoint-down($md) {
+		font-size: 14px;
+		line-height: 16px;
+		width: 186px;
+		margin: 16px 0px 217px;
+	}
+}
+
+.first-screen__img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	width: 720px;
+
+	@include media-breakpoint-down($xxl) {
+		width: 700px;
+	}
+
+	@include media-breakpoint-down($xl) {
+		width: 540px;
+	}
+
+	@include media-breakpoint-down($lg) {
+		right: -25%;
+	}
+
+	@include media-breakpoint-down($md) {
+		width: 436px;
+		left: 50px;
+	}
+
+	@include media-breakpoint-down($md) {
+		left: 0px;
+	}
+}
+
+.first-screen-awards {
+	display: flex;
+	margin-top: 100px;
+	position: relative;
+	z-index: 1;
+
+	@include media-breakpoint-down($md) {
+		margin-top: 25px;
+		justify-content: space-between;
+	}
+}
+
+.first-screen-awards__item {
+	display: flex;
+
+	&:nth-child(even) {
+		margin-left: 40px;
+
+		@include media-breakpoint-down($md) {
+			flex-direction: row-reverse;
+			margin-left: 0;
+		}
+	}
+}
+
+.first-screen-awards__text {
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: $gray-light;
+	margin-left: 15px;
+
+	&:last-of-type {
+		@include media-breakpoint-down($md) {
+			margin-right: 7px;
+		}
+	}
+
+	@include media-breakpoint-down($md) {
+		font-size: 10px;
+		line-height: 12px;
+		color: $gray-medium;
+		margin-left: 7px;
+	}
+}
+
+.first-screen-awards__img {
+	@include media-breakpoint-down($md) {
+		display: none;
+	}
+}
+
+.first-screen-awards__img_mobile {
+	display: none;
+
+	@include media-breakpoint-down($md) {
+		display: block;
+	}
+}

@@ -1,0 +1,39 @@
+.stories {
+	padding-top: 110px;
+	padding-bottom: 100px;
+
+	@include media-breakpoint-down($xl) {
+		padding-top: 28px;
+		padding-bottom: 35px;
+	}
+}
+
+.stories__wrap {
+	position: relative;
+}
+
+.stories__slide {
+	img {
+		border-radius: 10px;
+
+		@include media-breakpoint-down($xxl) {
+			width: 100%;
+		}
+	}
+}
+
+.stories__slide {
+	position: relative;
+	cursor: pointer;
+}
+
+.stories__play {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+
+	@include media-breakpoint-down($md) {
+		width: 26px;
+		height: 27px;
+	}
+}

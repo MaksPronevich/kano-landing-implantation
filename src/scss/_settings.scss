@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gilroy';
+	font-size: 24px;
+	font-weight: 600;
+	height: 100%;
+	background-color: $main-bg;
+	color: $gray;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+p,
+a,
+span,
+table,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+	transition: $transition;
+}
+
+button {
+	border: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+	@include media-breakpoint-up($xl) {
+		max-width: 1260px;
+	}
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+	@include media-breakpoint-down($md) {
+		padding: 0 20px;
+	}
+}

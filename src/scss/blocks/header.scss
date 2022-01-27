@@ -1,0 +1,103 @@
+.header {
+	background-color: $secondary-bg;
+	padding: 20px 0;
+	position: sticky;
+	top: 0;
+	z-index: 20;
+
+	@include media-breakpoint-down($md) {
+		background: $white;
+		padding: 18px 0 12px;
+	}
+}
+
+.header__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo {
+	display: flex;
+
+	@include media-breakpoint-down($xl) {
+		width: 150px;
+	}
+
+	@include media-breakpoint-down($md) {
+		width: 110px;
+	}
+
+	img {
+		@include media-breakpoint-down($xl) {
+			width: 100%;
+		}
+	}
+}
+
+.header-nav {
+	@include media-breakpoint-down($lg) {
+		display: none;
+	}
+}
+
+.header-nav__list {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav__item {
+	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&.active,
+	&:hover {
+		.header-nav__link {
+			color: $black;
+			border-bottom: 1px solid $green;
+		}
+	}
+}
+
+.header-nav__link {
+	font-size: 14px;
+	color: $gray-medium;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.header-phone {
+	display: flex;
+	align-items: center;
+}
+
+.header-phone__link {
+	font-size: 20px;
+	color: $pink;
+
+	@include media-breakpoint-down($md) {
+		font-size: 14px;
+	}
+}
+
+.header-phone__btn {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: $pink;
+	padding: 16px 32px;
+	border: 1px solid $pink;
+	border-radius: 10px;
+	margin-left: 30px;
+
+	&:hover {
+		color: $white;
+		background: $pink;
+	}
+
+	@include media-breakpoint-down($xl) {
+		display: none;
+	}
+}
